@@ -1,30 +1,13 @@
 <template>
   <div id="app">
-    <x-header :left-options="{showBack: true}">
-      hhhhhh
-    </x-header>
-
-    <img src="./assets/logo.png">
+    <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link>
     <router-view/>
-    <tabbar>
-      <tabbar-item>
-        <span slot="label">待办提醒</span>
-      </tabbar-item>
-      <tabbar-item>
-        <span slot="label">项目信息查询</span>
-      </tabbar-item>
-    </tabbar>
   </div>
 </template>
 
 <script>
-  import { XHeader, Tabbar, TabbarItem } from 'vux';
   export default {
-    components: {
-      XHeader,
-      Tabbar,
-      TabbarItem
-    },
     name: 'App'
   }
 </script>
