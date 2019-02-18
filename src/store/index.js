@@ -8,7 +8,7 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    // url:'http://192.168.0.214:33333',
+    url:'http://192.168.0.214:33333',
     token: '3',
     userInfo: {},
     isLogin: false,
